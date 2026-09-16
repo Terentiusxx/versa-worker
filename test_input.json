@@ -1,0 +1,15 @@
+{
+  "input": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are Versa, an AI assistant."
+      },
+      {
+        "role": "user",
+        "content": "Explain DNS in three short sentences."
+      }
+    ],
+    "max_tokens": 200
+  }
+}
