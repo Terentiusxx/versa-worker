@@ -73,5 +73,5 @@ def handler(job):
         }
 
 
-if __name__ == "__main__":
-    runpod.serverless.start({"handler": handler})
+# Keep this at module scope so RunPod's GitHub source scanner can detect it.
+runpod.serverless.start({"handler": handler})
