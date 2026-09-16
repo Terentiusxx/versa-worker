@@ -17,10 +17,12 @@ RUN /opt/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
 
 WORKDIR /app
 
-COPY handler.py /app/handler.py
+COPY app.py /app/app.py
 COPY start.sh /app/start.sh
 
 RUN chmod +x /app/start.sh
+
+EXPOSE 8000
 
 ENTRYPOINT []
 CMD ["/app/start.sh"]
